@@ -1,0 +1,117 @@
+@import "/src//assets//css/partials/includes";
+@import "/src//assets//css/partials/colors";
+
+
+// .example-container {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//   }
+  
+//   .example-is-mobile .example-toolbar {
+//     position: fixed;
+//     /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+//     z-index: 2;
+//   }
+  
+//   h1.example-app-name {
+//     margin-left: 8px;
+//   }
+  
+//   .example-sidenav-container {
+//     /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+//        causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+//     flex: 1;
+//   }
+  
+//   .example-is-mobile .example-sidenav-container {
+//     /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+//        `<body>` to be our scrolling element for mobile layouts. */
+//     flex: 1 0 auto;
+//   }
+
+  
+
+
+
+  .layout {
+    width: 100%;
+  }
+  
+  .layout-sidebar {
+    height:calc(100vh - 70px);
+    margin-top: 70px;
+  
+    @media (max-width: $small) {
+      width: 218px;
+    }
+  }
+  
+  .layout-content {
+    background-color: $background-color;
+  
+    height:calc(100vh - 71px);
+    margin-top: 71px;
+  
+    @media (max-width: $small) {
+      width: 100%;
+    }
+  }
+  
+  
+  .header-title-cg{
+    @media (max-width: $medium) {
+      display: none;
+    }
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 9px;
+    right: 15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  .show-scroll {
+    opacity: 1;
+  }
+  
+  .scrollbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+  }
+  
+  .header-title-cg{
+    @media (max-width: $medium) {
+      display: none;
+    }
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 9px;
+    right: 15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  .show-scroll {
+    opacity: 1;
+  }
+  
+  .scrollbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+  }
+  

@@ -1,0 +1,62 @@
+<!-- <header>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar>
+</header> -->
+
+<header>
+  <mat-toolbar class="header p-2" color="primary">
+
+    <div class="header__title">
+      <button class="header__title-button" mat-mini-fab (click)="openMenu()">
+        <mat-icon *ngIf="!isMenuOpened" class="header__title-button-icon">format_indent_increase</mat-icon>
+        <mat-icon *ngIf="isMenuOpened" class="header__title-button-icon">format_indent_decrease</mat-icon>
+      </button>
+      <!-- <h6 class="header__title-text">High Risk Pregnancy Monitoring System</h6>
+      <img src="./assets/images/cg-logo-70x70.png" alt="logo" class="header-cg-logo"> -->
+    </div>
+  
+    <div class="row header-title-cg">
+      <!-- <div class="col-md-2 col-lg-2 col-sm-2 p-2 header-logo-img">
+        <img src="./assets/images/cg-logo-70x70.png" alt="logo">
+      </div> -->
+      <div class="col-md-12 col-lg-12 col-sm-12 text-center text-white mt-2 mb-2 header-title-text">
+        <!-- <h5 class="p-2"><strong>Hello, Mohendra</strong></h5> -->
+      </div>
+      <!-- <div class="col-md-2 col-lg-2 col-sm-2 p-2 header-logo-img">
+        <img src="./assets/images/nhm-logo-70x70.png" style="float:right;" alt="logo">
+      </div> -->
+    </div>
+  
+    <!-- <div class="header-toolbar">
+      <img src="./assets/images/health-logo-67x67.png" style="float:right;" alt="logo" class="header-cg-logo"> &nbsp;
+      <img src="./assets/images/nhm-logo-66x66.png" style="float:right;" alt="logo" class="header-cg-logo">
+      <button class="user-button" mat-mini-fab [matMenuTriggerFor]="userMenu">
+        <mat-icon class="user-button__icon">person</mat-icon>
+      </button>
+      <mat-menu #userMenu="matMenu" xPosition="before">
+        <div class="user-menu-title">
+          <h5 class="user-menu-title__name">Mohendra Sahu</h5>
+        </div>
+        <button mat-menu-item class="user-menu__item-title" (click)="openChangePasswordForm()">
+          <mat-icon class="user-menu-icon">key</mat-icon>Change Password
+        </button>
+        <div class="sign-button-wrapper">
+          <button class="sign-button" mat-flat-button (click)="signOutEmit()">Sign out</button>
+        </div>
+      </mat-menu>
+    </div> -->
+  
+  </mat-toolbar>
+  
+</header>

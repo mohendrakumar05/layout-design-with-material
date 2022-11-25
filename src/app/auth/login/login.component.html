@@ -1,0 +1,60 @@
+<!-- <div class="form-wrapper">
+    <div class="form-container shadow">
+        <form [formGroup]="loginForm">
+            <h2>Login</h2>
+            
+            <div>
+                <mat-form-field appearance="fill" id="email-field">
+                    <mat-label>Enter your email</mat-label>
+                    <input matInput placeholder="pat@example.com" formControlName="emailFormControl" required>
+                    <mat-error *ngIf="emailFormControl.invalid">{{getErrorMessage()}}</mat-error>
+                    </mat-form-field>
+            </div>
+    
+            <div>
+                <mat-form-field appearance="fill" id="pass-field" >
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="passwordFormControl" required>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    </mat-form-field>
+            </div>
+    
+            <span class="my-2">Don't have an account? <a href="#">Sign up now!</a></span>
+            <div>
+                <button id="log-btn" mat-raised-button color="accent" (click)="onClickLogin()">
+                    Login
+                </button>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+
+<div class="form-wrapper">
+    <div class="login-box">
+        <h2>Login</h2>
+        <form [formGroup]="loginForm">
+          <div class="user-box">
+            <input type="text" name="" formControlName="emailFormControl" required>
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" formControlName="passwordFormControl" required>
+            <label>Password</label>
+          </div>
+
+          <button id="log-btn" mat-raised-button color="primary" (click)="onClickLogin()">
+            Login
+          </button>
+          <!-- <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a> -->
+        </form>
+      </div>
+</div>

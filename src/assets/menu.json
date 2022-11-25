@@ -1,0 +1,55 @@
+{
+    "1": [
+      {
+        "label": "Dashboard",
+        "route": "/sadmin/dashboard",
+        "icon": "dashboard",
+        "child": []
+      },
+      {
+        "label": "Hrp Reason",
+        "route": "/sadmin/hrpreason",
+        "icon": "update",
+        "child": []
+      },
+      {
+        "label": "Height",
+        "route": "/sadmin/height",
+        "icon": "update",
+        "child": []
+      },
+      {
+        "label": "Role",
+        "route": "/sadmin/role",
+        "icon": "update",
+        "child": []
+      },
+      {
+        "label":"Users",
+        "route":"/sadmin/users",
+        "icon":"update",
+        "child":[]
+      },
+      
+      {
+        "label":"PNC Visit Type",
+        "route":"/sadmin/visitTypePnc",
+        "icon":"update",
+        "child":[]
+      }       
+    ],
+    "2": [
+        {
+            "label":"Delivery Type",
+            "route":"/sadmin/deliveryType",
+            "icon":"update",
+            "child":[]
+        },
+        {
+            "label":"Outcome",
+            "route":"/sadmin/outcome",
+            "icon":"update",
+            "child":[]
+        }
+    ]
+}
